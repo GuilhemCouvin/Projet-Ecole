@@ -3,19 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java_projet_ecole;
+package Controller;
 
+import View.*;
 /**
  *
  * @author alex_
  */
 public class Java_projet_ecole {
 
-    /**
+    private static AjouterPersonne p;
+
+	/**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+    	p = new AjouterPersonne();
+    	
     }
     
 }
