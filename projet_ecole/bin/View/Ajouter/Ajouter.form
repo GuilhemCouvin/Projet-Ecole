@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="AjouterPersonne" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="AjouterAnnee" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="AjouterBulletin" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="AjouterClasse" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AjouterDiscipline" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="AjouterEnseignement" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AjouterEvaluation" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AjouterInscription" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AjouterNiveau" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AjouterTrimestre" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="461" max="-2" attributes="0"/>
+                      <Component id="retour" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="94" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="AjouterPersonne" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AjouterAnnee" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AjouterBulletin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AjouterClasse" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AjouterDiscipline" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AjouterEnseignement" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AjouterEvaluation" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AjouterInscription" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AjouterNiveau" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AjouterTrimestre" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="281" max="32767" attributes="0"/>
+              <Component id="retour" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="AjouterPersonne">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Personne"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AjouterPersonneActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AjouterAnnee">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Annee"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AjouterAnneeActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AjouterBulletin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bulletin"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AjouterBulletinActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AjouterClasse">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Classe"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AjouterClasseActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AjouterDiscipline">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Discipline"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AjouterDisciplineActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AjouterEnseignement">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Enseignement"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AjouterEnseignementActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AjouterEvaluation">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Evaluation"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AjouterEvaluationActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AjouterInscription">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Inscription"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AjouterInscriptionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AjouterNiveau">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Niveau"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AjouterNiveauActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AjouterTrimestre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Trimestre"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AjouterTrimestreActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="retour">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Retour"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="retourActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
