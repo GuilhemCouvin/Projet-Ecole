@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="AfficherPersonne" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="AfficherAnnee" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="AfficherBulletin" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="AfficherClasse" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AfficherDiscipline" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="AfficherEnseignement" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AfficherEvaluation" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AfficherInscription" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AfficherNiveau" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="AfficherTrimestre" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="461" max="-2" attributes="0"/>
+                      <Component id="retour" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="63" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="AfficherPersonne" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AfficherAnnee" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AfficherBulletin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AfficherClasse" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AfficherDiscipline" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AfficherEnseignement" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AfficherEvaluation" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AfficherInscription" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AfficherNiveau" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AfficherTrimestre" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="380" max="32767" attributes="0"/>
+              <Component id="retour" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="AfficherEnseignement">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Enseignement"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AfficherEnseignementActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AfficherEvaluation">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Evaluation"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AfficherEvaluationActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AfficherPersonne">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Personne"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AfficherPersonneActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AfficherInscription">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Inscription"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AfficherInscriptionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AfficherNiveau">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Niveau"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AfficherNiveauActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AfficherAnnee">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Annee"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AfficherAnneeActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AfficherTrimestre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Trimestre"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AfficherTrimestreActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AfficherBulletin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bulletin"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AfficherBulletinActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AfficherClasse">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Classe"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AfficherClasseActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="retour">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Retour"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="retourActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AfficherDiscipline">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Discipline"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AfficherDisciplineActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
