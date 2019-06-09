@@ -30,16 +30,13 @@ public class AfficherDiscipline extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        nom = new javax.swing.JTextField();
         jLabel_Id = new javax.swing.JLabel();
         retour = new javax.swing.JButton();
         id1 = new javax.swing.JTextField();
         rechercher = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setText("Nom");
 
         jLabel_Id.setText("Id");
 
@@ -57,31 +54,30 @@ public class AfficherDiscipline extends javax.swing.JFrame {
             }
         });
 
+        jTextField1.setText("jTextField1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(233, 233, 233)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(retour)
-                        .addGap(297, 297, 297))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel_Id)
-                                .addGap(105, 105, 105))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(90, 90, 90)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(233, 233, 233)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
+                                .addComponent(retour)
+                                .addGap(297, 297, 297))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel_Id)
+                                .addGap(105, 105, 105)
                                 .addComponent(id1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rechercher, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                .addContainerGap(261, Short.MAX_VALUE))
+                                .addComponent(rechercher, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(49, 49, 49)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 920, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -91,11 +87,9 @@ public class AfficherDiscipline extends javax.swing.JFrame {
                     .addComponent(jLabel_Id)
                     .addComponent(id1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(rechercher))
-                .addGap(22, 22, 22)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addGap(24, 24, 24)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                 .addComponent(retour)
                 .addGap(62, 62, 62))
         );
@@ -109,12 +103,11 @@ public class AfficherDiscipline extends javax.swing.JFrame {
     }//GEN-LAST:event_retourActionPerformed
 
     private void rechercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rechercherActionPerformed
-    	this.dispose();
-        Afficher fentre1 = new Afficher();
+    	
         Discipline d = new Discipline();
         d.findDiscipline(id1);
-		 System.out.println(d.findDiscipline(id1).get(0));
-    	// TODO add your handling code here:
+        System.out.println(d.findDiscipline(id1).get(0));
+    	jTextField1.setText(d.findDiscipline(id1).get(0));// TODO add your handling code here:
     }//GEN-LAST:event_rechercherActionPerformed
 
     /**
@@ -154,9 +147,8 @@ public class AfficherDiscipline extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField id1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel_Id;
-    private javax.swing.JTextField nom;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton rechercher;
     private javax.swing.JButton retour;
     // End of variables declaration//GEN-END:variables

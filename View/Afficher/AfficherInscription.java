@@ -30,14 +30,11 @@ public class AfficherInscription extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        id_personne = new javax.swing.JTextField();
         retour = new javax.swing.JButton();
         jLabel_Id = new javax.swing.JLabel();
         id1 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        id_classe = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         rechercher = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,10 +47,6 @@ public class AfficherInscription extends javax.swing.JFrame {
 
         jLabel_Id.setText("Id");
 
-        jLabel1.setText("Classe");
-
-        jLabel2.setText("Personne");
-
         rechercher.setText("Rechercher");
         rechercher.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,36 +54,30 @@ public class AfficherInscription extends javax.swing.JFrame {
             }
         });
 
+        jTextField1.setText("jTextField1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(236, 236, 236)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(retour)
-                        .addGap(301, 301, 301))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addComponent(jLabel_Id)
-                                    .addGap(105, 105, 105))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addComponent(jLabel1)
-                                    .addGap(79, 79, 79)))
+                        .addGap(236, 236, 236)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(63, 63, 63)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(id_classe)
-                            .addComponent(id_personne, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(retour)
+                                .addGap(301, 301, 301))
                             .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel_Id)
+                                .addGap(105, 105, 105)
                                 .addComponent(id1, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(rechercher, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                .addContainerGap(265, Short.MAX_VALUE))
+                                .addComponent(rechercher, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(52, 52, 52)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 953, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -100,15 +87,9 @@ public class AfficherInscription extends javax.swing.JFrame {
                     .addComponent(jLabel_Id)
                     .addComponent(id1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(rechercher))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(id_classe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(id_personne, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, Short.MAX_VALUE)
+                .addGap(24, 24, 24)
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 189, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(retour)
                 .addGap(42, 42, 42))
         );
@@ -119,14 +100,15 @@ public class AfficherInscription extends javax.swing.JFrame {
     private void retourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_retourActionPerformed
     	this.dispose();
         Afficher fentre1 = new Afficher();
-        Inscription d = new Inscription();
-        d.findInscription(id1);
-		 System.out.println(d.findInscription(id1).get(0));
+        
         // TODO add your handling code here:
     }//GEN-LAST:event_retourActionPerformed
 
     private void rechercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rechercherActionPerformed
-        // TODO add your handling code here:
+        Inscription d = new Inscription();
+        d.findInscription(id1);
+        System.out.println(d.findInscription(id1).get(0));
+        jTextField1.setText(d.findInscription(id1).get(0));// TODO add your handling code here:
     }//GEN-LAST:event_rechercherActionPerformed
 
     /**
@@ -166,11 +148,8 @@ public class AfficherInscription extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField id1;
-    private javax.swing.JTextField id_classe;
-    private javax.swing.JTextField id_personne;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel_Id;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton rechercher;
     private javax.swing.JButton retour;
     // End of variables declaration//GEN-END:variables

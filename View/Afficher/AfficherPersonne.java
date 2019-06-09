@@ -30,24 +30,13 @@ public class AfficherPersonne extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        nom = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        prenom = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        type = new javax.swing.JTextField();
         retour = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         id = new javax.swing.JTextField();
         rechercher = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel2.setText("Nom");
-
-        jLabel3.setText("Prenom");
-
-        jLabel4.setText("Type");
 
         retour.setText("Retour");
         retour.addActionListener(new java.awt.event.ActionListener() {
@@ -72,27 +61,19 @@ public class AfficherPersonne extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(383, 383, 383)
+                        .addGap(227, 227, 227)
+                        .addComponent(jLabel1)
+                        .addGap(76, 76, 76)
+                        .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rechercher))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(433, 433, 433)
                         .addComponent(retour))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(210, 210, 210)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(17, 17, 17)
-                                .addComponent(jLabel1))
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3))
-                        .addGap(60, 60, 60)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(nom)
-                            .addComponent(prenom)
-                            .addComponent(type, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rechercher, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                .addContainerGap(241, Short.MAX_VALUE))
+                        .addGap(34, 34, 34)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 933, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -102,21 +83,11 @@ public class AfficherPersonne extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(rechercher))
+                .addGap(27, 27, 27)
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(prenom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(type, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
                 .addComponent(retour)
-                .addGap(80, 80, 80))
+                .addGap(34, 34, 34))
         );
 
         pack();
@@ -129,11 +100,11 @@ public class AfficherPersonne extends javax.swing.JFrame {
 
     private void rechercherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rechercherActionPerformed
         // TODO add your handling code here:
-    	this.dispose();
-        Afficher fentre1 = new Afficher();
+    	
         Personne d = new Personne();
         d.findPersonne(id);
-		 System.out.println(d.findPersonne(id));
+        System.out.println(d.findPersonne(id));
+        jTextField1.setText(d.findPersonne(id).get(0));
     }//GEN-LAST:event_rechercherActionPerformed
 
     /**
@@ -174,13 +145,8 @@ public class AfficherPersonne extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField id;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField nom;
-    private javax.swing.JTextField prenom;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton rechercher;
     private javax.swing.JButton retour;
-    private javax.swing.JTextField type;
     // End of variables declaration//GEN-END:variables
 }
