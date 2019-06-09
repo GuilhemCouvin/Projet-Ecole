@@ -3,46 +3,45 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package Vue.Ajouter;
+
+import java.awt.BorderLayout;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
+import java.awt.event.*;
 import javax.swing.*;
-import Model.*;
-import Controller.*;
+import Modele.*;
+import Vue.InterfaceGraphique;
 
-
-public class AjouterPersonne extends JFrame implements ActionListener{
+/**
+ *
+ * @author Andrej
+ */
+public class AjouterDocteur extends JFrame implements ActionListener{
     
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
-
-
-	private JPanel pan = new JPanel();
+    private JPanel pan = new JPanel();
 
     
     
     private JButton submit = new JButton("Envoyer");
-    private JTextField id= new JTextField("");
     private JTextField nom= new JTextField("");
     private JTextField prenom= new JTextField("");
-    private JTextField type= new JTextField("");
+    private JTextField adresse= new JTextField("");
+    private JFormattedTextField tel= new JFormattedTextField();
+    private JTextField id= new JTextField("");
+    private JTextField special= new JTextField("");
 
     private JButton retour = new JButton("Retour");
     
-    private JLabel ident = new JLabel("Id             ");
     private JLabel surname = new JLabel("Nom            ");
     private JLabel name = new JLabel("Prenom            ");
-    private JLabel ty = new JLabel("Type              ");
-
+    private JLabel adre = new JLabel("Adresse           ");
+    private JLabel numb = new JLabel("Telephone         ");    
+    private JLabel ident = new JLabel("ID               ");
+    private JLabel spec = new JLabel("Specialite        ");
 
     
-    public AjouterPersonne()
+    public AjouterDocteur()
     {
         pan.setLayout(new GridLayout(2,8));
         this.setTitle("Option Ajouter");
@@ -56,11 +55,12 @@ public class AjouterPersonne extends JFrame implements ActionListener{
         JPanel top = new JPanel();
          // instancier le panneau
         getContentPane().add(top); // ajouter le panneau dans la fenêtre 
-
         nom.setPreferredSize(new Dimension(460, 30));
         prenom.setPreferredSize(new Dimension(460, 30));
-        type.setPreferredSize(new Dimension(460, 30));
+        adresse.setPreferredSize(new Dimension(460, 30));
         id.setPreferredSize(new Dimension(460, 30));
+        tel.setPreferredSize(new Dimension(460, 30));
+        special.setPreferredSize(new Dimension(460, 30));
         
         top.add(ident);
         top.add(id);
@@ -68,8 +68,12 @@ public class AjouterPersonne extends JFrame implements ActionListener{
         top.add(nom);
         top.add(name);
         top.add(prenom);
-        top.add(type);
-        top.add(type);
+        top.add(adre);
+        top.add(adresse);
+        top.add(numb);
+        top.add(tel);
+        top.add(spec);
+        top.add(special);
 
         
 
@@ -78,8 +82,10 @@ public class AjouterPersonne extends JFrame implements ActionListener{
         submit.addActionListener(this);
         nom.addActionListener(this);
         prenom.addActionListener(this);
-        type.addActionListener(this);
+        adresse.addActionListener(this);
         id.addActionListener(this);
+        tel.addActionListener(this);
+        special.addActionListener(this);
         
         JPanel south = new JPanel();
         south.add(retour);
@@ -88,38 +94,33 @@ public class AjouterPersonne extends JFrame implements ActionListener{
         south.add(submit);
         this.setContentPane(pan);
         this.setVisible(true);
+         
+              
+           
+           
+             
+
     }
+
     
+    
+
     public void actionPerformed(ActionEvent ae) {
        Object source = ae.getSource();
         if (source == submit) 
         {   
             this.dispose();
-            Personne d = new Personne();
-            d.ajouterPersonne(id, nom, prenom, type);
-            System.out.println("Add with success!");
+            Docteur d =new Docteur();
+            d.ajouterDocteur(id, nom, prenom, adresse, tel, special);
+            InterfaceGraphique g = new InterfaceGraphique();       
         }
         
+        if(source==retour)
+       {    
+           this.dispose();
+           Ajouter a = new Ajouter();
+       }
     }
-
-	/**
-	 * @return the ty
-	 */
-	public JLabel getTy() {
-		return ty;
-	}
-
-	/**
-	 * @param ty the ty to set
-	 */
-	public void setTy(JLabel ty) {
-		this.ty = ty;
-	}
-
-	public void actionPerformed1(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
     
     
     

@@ -84,7 +84,7 @@ public class Connexion {
             System.out.println("Connexion reussie");
 
             // url de connexion "jdbc:mysql://localhost:3305/usernameECE"
-            String urlDatabase = "jdbc:mysql://localhost:3305/" + usernameECE;
+            String urlDatabase = "jdbc:mysql://localhost/" + usernameECE;
 
             //création d'une connexion JDBC à la base
             conn = DriverManager.getConnection(urlDatabase, loginDatabase, passwordDatabase);

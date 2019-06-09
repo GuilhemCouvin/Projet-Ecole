@@ -6,6 +6,8 @@
 package Controller;
 
 import View.*;
+import java.sql.SQLException;
+import jdbcv2018.*;
 /**
  *
  * @author alex_
@@ -17,7 +19,9 @@ public class Java_projet_ecole {
 	/**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
+
+        
     	p = new AjouterPersonne();
     	
     }

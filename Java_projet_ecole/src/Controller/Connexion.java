@@ -5,8 +5,14 @@
  */
 package Controller;
 
+/**
+ *
+ * @author Andrej
+ */
+
 //Librairies
 import java.sql.*;
+import javax.swing.JOptionPane;
 
 public class Connexion{
 
@@ -15,17 +21,26 @@ public class Connexion{
   private static String passwd = "";
   private static Connection connect;
    
-  public static Connection getInstance(){
-    if(connect == null){
-      try {    
+  public static Connection getInstance() throws ClassNotFoundException{
+    
+      try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            System.out.println("Classe nomeClasse - Driver non trovata");
+        }
+
+
+      if(connect == null){
+      try {
+          
         connect = DriverManager.getConnection(url, user, passwd);
       } catch (SQLException e) {
-        e.printStackTrace();
+        System.out.println("Stringa di connessione errata");
       }
     }      
     return connect;
   }   
 }
-
-
   
+
+        
