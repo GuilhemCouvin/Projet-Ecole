@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="miglayout15-swing.jar:jgoodies-forms-1.8.0.jar:/Users/Guilhem/Desktop/Projet POO Java/Resssources Projet Java/lib/jsch-0.1.51.jar:/Users/Guilhem/Downloads/ressource/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47-bin.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" source="11" sourcefiles="src/Model/DetailBulletin.java" sourcepath="src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>
